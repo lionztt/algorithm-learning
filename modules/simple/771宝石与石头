@@ -1,0 +1,19 @@
+/**
+ * 题目地址：https://leetcode-cn.com/problems/jewels-and-stones/
+ * @param {string} J
+ * @param {string} S
+ * @return {number}
+ */
+var numJewelsInStones = function(J, S) {
+    var j ={},count=0
+    J.split('').map(item=>{
+        j[item]=0
+    })
+    S.split('').map(item=>{
+        if(j[item]!==undefined){
+            count=count+1
+        }
+    })
+    return count
+};
+console.log(numJewelsInStones("aA",'aAAbbbb'))
