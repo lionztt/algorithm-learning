@@ -20,12 +20,12 @@ def intersection(nums1, nums2):
 
 # 思路2 -》不创造
 # python时间复杂度：https://blog.csdn.net/u010366748/article/details/51469937
-# 时间复杂度 O(nlogn)
+# 时间复杂度 O(n)
 # 空间复杂度 O(n)
 def intersection2(nums1, nums2):
-    # O(nlogn)
+    # O(n)
     s1=set(nums1)
-    # O(nlogn)
+    # O(n)
     s2=set(nums2)
     s3=set()
     # O(n)
@@ -40,7 +40,7 @@ def intersection2(nums1, nums2):
 
 # 问题：可以只使用一个set来完成题目吗？
 def intersection3(nums1, nums2):
-    # O(nlogn)
+    # O(n)
     s1=set(nums1)
     result = {}
     for i in range(len(nums2)):
